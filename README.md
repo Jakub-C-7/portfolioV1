@@ -1,5 +1,7 @@
 # Portfolio Version 1
-Welcome to my first ever personal portfolio
+Welcome to my first ever personal portfolio. This portfolio has been superceeded by my portfolioV2!
+
+You can still see portfolioV1 live at: https://aesthetic-cajeta-4c9e6e.netlify.app/
 
 My website is a single-page personal portfolio and is organised into the following
 four sections: about me, projects, skills, and contact me.
