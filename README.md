@@ -1,5 +1,5 @@
-# CTEC3905 ASSIGNMENT
-Welcome to my assignment repository!
+# Portfolio Version 1
+Welcome to my first ever personal portfolio
 
 My website is a single-page personal portfolio and is organised into the following
 four sections: about me, projects, skills, and contact me.
