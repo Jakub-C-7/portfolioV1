@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Jakub Chamera">
+	<meta name="description" content="I'm a final year CompSci student of De Montfort's Class of 2022 and an incoming Software Engineer. My primary passion and interest is and always has been computing, software design, development, and computer science. I am a creative driven by the opportunity to learn and implement new technologies whilst building meaningful projects along the way.">
+	<meta name="keywords" content="Computer Science, Artificial Intelligence, Software Engineering, Software Development, Web Development, Software Engineer, Software Developer, Web Developer, Portfolio, DMU, De Montfort University, Machine Learning, Jakub Chamera, Technology, Tech, Personal Website, Data Science, Programmer, Programming, CS, CompSci, AI, GitHub, Student, Graduate, Major, Bachelor, Java, MongoDB, MySQL, Scala, HTML, CSS, JavaScript, Node.js, Spring Boot, PHP, C#, Agile, Scrum">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+	<link rel="manifest" href="favicon/site.webmanifest">
+	<title>Jakub Chamera | Portfolio</title>
+</head>
+
+<body>
+
+	<header>
+
+		<div id="menuToggler">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+
+		<nav id="menu">
+			<a href="#aboutMe">About</a>
+			<a href="#projects">Projects</a>
+			<a href="#skills">Skills</a>
+			<a href="#contact">Contact</a>
+		</nav>
+
+		<section id="greeting">
+			<img src="images/meandseaimg.jpg" alt="personal picture 1" id="top-picture" class="personal-picture">
+			<h1>Jakub Chamera</h1>
+			<div class="wrapper">
+       <div class="words">
+           <span><em>Graduate</em></span>
+           <span><em>Software Engineer</em></span>
+           <span><em>Computer Scientist</em></span>
+           <span><em>Problem Solver</em></span>
+           <span><em>Graduate</em></span>
+       </div>
+   		</div>
+		</section>
+	</header>
+
+	<main>
+
+		<div class="logos">
+			<a href="https://www.dmu.ac.uk/home.aspx" target="_blank" rel="noopener noreferrer">
+				<img class="logos-img" src="images/dmu_logo.png" alt="DMU logo">
+			<a href="https://www.capgemini.com/gb-en/" target="_blank" rel="noopener noreferrer">
+				<img class="logos-img" src="images/capgemini_logo.svg" alt="Capgemini logo">
+			</a>
+			<a href="https://www.leics.police.uk/" target="_blank" rel="noopener noreferrer">
+				<img class="logos-img" src="images/leics_logo.png" alt="Leics Police logo">
+			</a>
+			<a href="https://www.stamford.ac.uk/" target="_blank" rel="noopener noreferrer">
+				<img class="logos-img" src="images/stamford_logo.png" alt="Stamford College logo">
+			</a>
+		</div>
+
+		<section id="search">
+			<input id="myQuery" type="search" placeholder="&#128269; search" aria-label="search">
+		</section>
+
+		<section id="content">
+
+			<article id="aboutMe" data-name="about me">
+				<section class="aboutme-top">
+					<img src="images/me-full-square-colour.jpg" alt="personal picture 2" class="personal-picture">
+					<section class="article-text">
+						<h2>About me</h2>
+						<span>Incoming Software Engineer @ Capgemini || BSc Computer Science @ De Montfort University </span>
+						<p>
+							My primary passion and interest is and always has been computing,
+							software design, development, and computer science. I am a creative
+							driven by the opportunity to learn and implement new technologies
+							whilst building meaningful projects along the way.
+						</p>
+						<ul>
+							<li>Microsoft AI-900 Certified</li>
+							<li>Bilingual (Fluent in Polish)</li>
+						</ul>
+					</section>
+				</section>
+				<section class="socials">
+					<a href="https://github.com/Jakub-C-7" target="_blank" rel="noopener noreferrer">
+						<img class="socials-img" src="images/github.png" alt="GitHub image">
+					</a>
+					<a href="https://www.linkedin.com/in/jakubchamera/" target="_blank" rel="noopener noreferrer">
+						<img class="socials-img" src="images/linkedin.png" alt="Linkedin image">
+					</a>
+				</section>
+				<section class="timeline">
+					<h2>My Story</h2>
+
+					<div class="timeline-item left">
+						<h3 class="timeline-year">2022</h3>
+						<span class="timeline-title">Software Engineer - Capgemini</span>
+					</div>
+
+					<div class="timeline-item right">
+						<h3 class="timeline-year">2020-2022</h3>
+						<span class="timeline-title">IT Support Analyst - Leicestershire Police Force</span>
+						<p class="timeline-blurb">
+							Twelve month placement followed by further employment
+						</p>
+					</div>
+
+					<div class="timeline-item left">
+						<h3 class="timeline-year">2018-2022</h3>
+						<span class="timeline-title">De Montfort University</span>
+						<p class="timeline-blurb">Computer Science BSc with placement year</p>
+					</div>
+
+					<div class="timeline-item right">
+						<h3 class="timeline-year">2016-2018</h3>
+						<span class="timeline-title">New College Stamford</span>
+						<p class="timeline-blurb">Extended Diploma in IT</p>
+					</div>
+
+				</section>
+			</article>
+
+			<article id="projects" class="darker-article" data-name="projects">
+				<section class="article-text">
+					<h2>Projects</h2>
+					<p id="count"></p>
+					<p>
+						<em>Click project titles to view more information on GitHub.</em>
+					</p>
+				</section>
+				<section id="projects-bottom">
+					<span id="pagination">
+						<button id="prev">&lt;</button>
+						<span id="pageIndicator">0</span> of <span id="nPages">0</span>
+						<button id="next">&gt;</button>
+					</span>
+					<section id="repositories"></section>
+				</section>
+			</article>
+
+			<article id="skills" data-name="skills">
+				<section class="article-text">
+					<h2>Skills</h2>
+					<p>
+						Below you can see just some of my skills. I thoroughly enjoy
+						learning new things which is why this list is constantly
+						expanding!
+					</p>
+				</section>
+				<section class="skills-bottom">
+					<article class="skill">
+						<h3>Java</h3>
+						<img src="images/java.png" alt="Java image">
+					</article>
+					<article class="skill">
+						<h3>Spring Boot</h3>
+						<img src="images/springboot.png" alt="Spring Boot image">
+					</article>
+					<article class="skill">
+						<h3>PHP</h3>
+						<img src="images/php.png" alt="PHP image">
+					</article>
+					<article class="skill">
+						<h3>HTML, CSS, and JavaScript</h3>
+						<img src="images/html-css-js.png" alt="HTML, CSS, and JavaScript image">
+					</article>
+					<article class="skill">
+						<h3>Scala</h3>
+						<img src="images/scala.png" alt="Scala image">
+					</article>
+					<article class="skill">
+						<h3>C#</h3>
+						<img src="images/csharp.png" alt="C# image">
+					</article>
+					<article class="skill">
+						<h3>Agile Methodologies</h3>
+						<img src="images/agile.png" alt="Agile Methodologies image">
+					</article>
+					<article class="skill">
+						<h3>MongoDB</h3>
+						<img src="images/mongodb.png" alt="MongoDB image">
+					</article>
+					<article class="skill">
+						<h3>MySQL</h3>
+						<img src="images/mysql.png" alt="MySQL image">
+					</article>
+				</section>
+			</article>
+
+		</section>
+
+		<section class="form" data-name="contact me form">
+			<!-- <form id="contact" action="mailto:jakubchamera7@gmail.com"> -->
+			<form id="contact" name="contact" method="POST" data-netlify="true">
+				<h2>Contact me!</h2>
+				<label for="myName">Name: </label>
+				<input id="myName" type="text" name="name" placeholder="enter your name" required>
+				<label for="myEmail">Email: </label>
+				<input id="myEmail" type="email" name="email" placeholder="enter your email" required>
+				<label for="myConfirmation">Confirm email: </label>
+				<input id="myConfirmation" type="email" placeholder="confirm your email" required>
+				<label for="mySubject">Subject: </label>
+				<input id="mySubject" type="text" name="subject" placeholder="enter your subject" required>
+				<label for="myMessage">Message: </label>
+				<textarea id="myMessage" name="body" placeholder="enter your message" rows="4" cols="50" required></textarea>
+				<input type="submit" value="Send">
+			</form>
+		</section>
+
+	</main>
+
+	<footer> &copy; Jakub Chamera</footer>
+
+	<script src="js/scripts.js"></script>
+</body>
+
+</html>

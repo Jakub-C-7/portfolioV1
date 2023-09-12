@@ -1,0 +1,838 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Montserrat&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
+
+.locked {
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-family: sans-serif;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+main, header h1, header span, #search input, #menuToggler {
+  animation: fadeIn 0.5s;
+  transition: 1s;
+}
+
+#top-picture {
+  /* margin-top: 10vh; */
+  width: 80%;
+  border: 8px solid white
+}
+
+header {
+  background-image: url(https://picsum.photos/id/827/400/700);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+  text-align: center;
+  min-height: 100vh;
+  color: white;
+  overflow: auto;
+}
+
+.words {
+  overflow: hidden;
+}
+
+.words span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding-left: 10px;
+  animation: spin_words 6s infinite;
+  font-size: 1.5rem;
+}
+
+.wrapper {
+  box-sizing: content-box;
+  height: 70px;
+  padding: 50px 30px;
+  display: flex;
+  justify-content: center;
+  border-radius: 8px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@keyframes spin_words {
+  10% {
+    transform: translateY(-112%);
+  }
+
+  25% {
+    transform: translateY(-100%);
+  }
+
+  35% {
+    transform: translateY(-212%);
+  }
+
+  50% {
+    transform: translateY(-200%);
+  }
+
+  60% {
+    transform: translateY(-312%);
+  }
+
+  75% {
+    transform: translateY(-300%);
+  }
+
+  85% {
+    transform: translateY(-412%);
+  }
+
+  100% {
+    transform: translateY(-400%);
+  }
+}
+
+header h1 {
+  font-size: 20vw;
+  font-weight: bold;
+  color: black;
+  text-shadow: 1px 1px white;
+  opacity: 0.8;
+}
+
+header span {
+  font-size: 5vw;
+}
+
+header em {
+  font-weight: bold;
+  color: black;
+  opacity: 0.8;
+  text-shadow: 1px 1px white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(100vh);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+nav.open {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+nav a {
+  color: white;
+  padding: 3rem;
+  flex-grow: 1;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: white;
+}
+
+nav a:last-child {
+  border-width: 0px;
+}
+
+article img {
+  width: 60%;
+  border-radius: 1em;
+}
+
+#search {
+  display: flex;
+  justify-content: center;
+  height: 5vh;
+  margin-top: 3vh;
+}
+
+#search input {
+  width: 40vw;
+  font-size: 1.2em;
+}
+
+#search input:hover, #search input:focus {
+  transform: scale(1.2);
+}
+
+#skills {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+#skills .article-text {
+  margin-bottom: 3rem;
+}
+
+.skill {
+  margin-bottom: 10vh;
+}
+
+.skill img {
+  width: 40%;
+  margin: 0;
+}
+
+.personal-picture {
+  border-radius: 50%;
+}
+
+article {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.aboutme-top h2 {
+  margin-top: 0;
+}
+
+.aboutme-top ul {
+  font-size: 6vw;
+  line-height: 1.7em;
+  color: #008080;
+}
+
+.socials {
+  margin-top: 1rem;
+  margin-bottom: 5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid grey;
+}
+
+.socials a, .logos a {
+  font-size: 0;
+  text-decoration: none;
+}
+
+.socials-img {
+  width: 20%;
+  border-radius: 50%;
+  margin-left: 2vw;
+  transition: all .2s ease-in-out;
+}
+
+.logos {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.logos a {
+  display: flex;
+  align-items: center;
+}
+
+.logos-img {
+  max-width: 300px;
+  max-height: 100px;
+  transition: all .2s ease-in-out;
+  padding: 1.5rem;
+}
+
+.socials-img:hover, .logos-img:hover {
+  transform: scale(1.2);
+}
+
+.timeline-item {
+  margin-bottom: 4rem;
+}
+
+.timeline h2 {
+  font-size: 2.4em;
+  text-decoration: underline;
+  color: #008080;
+  text-shadow: 1px 1px grey;
+  margin-bottom: 2rem;
+  margin-top: 0;
+}
+
+.timeline h3 {
+  font-size: 1.5em;
+  color: black;
+}
+
+.timeline span {
+  font-size: 1.5em;
+  color: #008080;
+}
+
+.timeline p {
+  font-size: 1.2em;
+}
+
+.darker-article {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.article-text h2 {
+  font-size: 8vw;
+}
+
+.article-text p {
+  font-size: 4vw;
+  line-height: 1.7em;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+#count {
+  padding-bottom: 1em;
+}
+
+#repositories {
+  min-height: 60vh;
+}
+
+.repoContainer img {
+  width: 70%;
+  height: auto;
+}
+
+span button {
+  width: 3em;
+  height: 3em;
+  font-size: 2em;
+  font-weight: bold;
+  border: none;
+  background: transparent;
+  color: #008080;
+}
+
+#projects a, #skills h3, .aboutme-top span {
+  color: #008080;
+  font-size: 1.2em;
+}
+
+.form {
+  width: 100%;
+}
+
+form {
+  justify-content: center;
+  display: grid;
+  grid-row-gap: 0.25em;
+  grid-column-gap: 1em;
+  grid-template-columns: 1fr 3fr;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 2rem;
+}
+
+form h2 {
+  grid-column: 2 / 3;
+}
+
+form textarea {
+  resize: none;
+}
+
+form label {
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+form input[type="email"], form input[type="text"], form textarea {
+  background: transparent;
+  border: none;
+  border-bottom: 1px dashed #83A4C5;
+  outline: none;
+  padding: 0;
+  font-style: italic;
+}
+
+form input[type="submit"] {
+  grid-column: 2/3;
+  justify-self: end;
+  padding: 8px 10px 8px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+form input[type="email"]:invalid, form input[type="text"]:invalid, form textarea:invalid {
+  color: red;
+}
+
+form input[type="email"]:valid, form input[type="text"]:valid, form textarea:valid {
+  color: green;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  color: grey;
+  padding: 2em;
+}
+
+main section article {
+  transition: 1s;
+}
+
+.hidden {
+  opacity: 0;
+  height: 0;
+  box-sizing: border-box;
+  padding: 0 1em;
+  overflow: auto;
+}
+
+#menuToggler {
+  position: fixed;
+  top: 0.5em;
+  left: 0.5em;
+  width: 2em;
+  height: 2em;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+#menuToggler div {
+  height: 20%;
+  background-color: black;
+  border-style: solid;
+  border-color: rgb(205, 205, 205);
+  border-width: 1px;
+  transition: transform 0.2s;
+}
+
+#menuToggler.open div {
+  border: none;
+  background-color: rgba(120, 116, 117, 0.9);
+}
+
+#menuToggler.open div:nth-child(1) {
+  transform: translateY(0.6em) rotate(45deg);
+}
+
+#menuToggler.open div:nth-child(3) {
+  transform: translateY(-1em) rotate(-45deg);
+}
+
+#menuToggler.open div:nth-child(2) {
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+section.repoContainer {
+  animation: fadeIn 0.5s;
+}
+
+@media screen and (min-width: 450px) {
+  #top-picture {
+    width: 60%;
+  }
+
+  header h1 {
+    font-size: 15vw;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #menuToggler {
+    display: none;
+  }
+
+  #top-picture {
+    margin-top: 0;
+  }
+
+  nav {
+    flex-direction: row;
+    transform: translateX(0);
+    opacity: 1;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  nav a {
+    padding: 0.5rem;
+    border-width: 0px 1px 0px 0px;
+  }
+
+  nav a:hover {
+    background-color: rgba(19, 125, 124, 0.5);
+  }
+
+  article {
+    flex-direction: row;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  article img {
+    margin-right: 1em;
+    width: 45%;
+  }
+
+  .aboutme-top {
+    display: flex;
+    align-items: center;
+  }
+
+  .aboutme-top ul {
+    text-align: left;
+  }
+
+  .socials-img {
+    width: 15%;
+  }
+
+  .timeline {
+    position: relative;
+    margin: 0 auto;
+    width: 90%;
+  }
+
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: rgba(0, 0, 0, 0.8);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: 3px;
+    margin-right: 3px;
+    margin-top: 5em;
+  }
+
+  .left {
+    left: 0;
+  }
+
+  .right {
+    left: 50%;
+    margin-left: 1rem;
+  }
+
+  .timeline-item {
+    position: relative;
+    width: 50%;
+  }
+
+  .timeline-title {
+    margin: 0;
+    font-size: 1.5em;
+  }
+
+  .timeline-blurb {
+    line-height: 1.5;
+    font-size: 1em;
+    margin-top: 0.5rem;
+  }
+
+  .left::before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    right: 30px;
+    border: medium solid;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent rgba(0, 0, 0, 0.8);
+  }
+
+  .right::before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    left: 30px;
+    border: medium solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgba(0, 0, 0, 0.8);
+  }
+
+  #projects a:hover {
+    color: white;
+    transition: 0.7s;
+  }
+
+  #projects-bottom {
+    width: 100%;
+    font-size: 1.2em;
+  }
+
+  #projects .article-text {
+    margin-bottom: 3rem;
+  }
+
+  .article-text h2 {
+    font-size: 4vw;
+  }
+
+  .article-text p {
+    font-size: 2vw;
+  }
+
+  .aboutme-top ul {
+    font-size: 3vw;
+  }
+
+  .skill {
+    margin-bottom: 8rem;
+    font-size: 1.5em;
+    transition: all .2s ease-in-out;
+    margin-top: 2rem;
+  }
+
+  .skill:hover {
+    transform: scale(1.2) translateY(-8vh);
+  }
+
+  span button {
+    transition: all .2s ease-in-out;
+  }
+
+  span button:hover {
+    color: white;
+    background: inherit;
+    transform: scale(1.3);
+  }
+
+  header {
+    background-image: url(https://picsum.photos/id/827/650/700);
+    padding-top: 15vh;
+  }
+
+  header h1 {
+    font-size: 10vw;
+  }
+
+  header span {
+    font-size: 3vw;
+  }
+
+  form input[type="submit"]:hover {
+    background-color: transparent;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  #top-picture {
+    width: 45%;
+  }
+
+  .words span {
+    font-size: 2rem;
+  }
+
+  header {
+    background-image: url(https://picsum.photos/id/827/800/600);
+    min-height: 80vh;
+  }
+
+  #pagination {
+    display: none;
+  }
+
+  #repositories {
+    min-height: 0;
+  }
+
+  .skills-bottom {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    width: 75%;
+    margin: 0 auto;
+  }
+
+  #repositories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #top-picture {
+    width: 30%;
+  }
+
+  .personal-picture {
+    width: 35%;
+  }
+
+  header h1 {
+    font-size: 7vw;
+  }
+
+  header {
+    background-image: url(https://picsum.photos/id/827/1100/600);
+  }
+
+  .aboutme-top span {
+    font-size: 2em;
+  }
+
+  .timeline-title {
+    font-size: 2em;
+  }
+
+  .timeline-blurb {
+    font-size: 1.5em;
+  }
+
+  .aboutme-top ul {
+    font-size: 2.2vw;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .skill img {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1300px) {
+  .personal-picture {
+    width: 30%;
+  }
+
+  #top-picture {
+    width: 25%;
+  }
+
+  header {
+    background-image: url(https://picsum.photos/id/827/1500/600);
+    padding-top: 10vh;
+  }
+
+  header h1 {
+    font-size: 6vw;
+  }
+
+  form, form input, form textarea {
+    grid-row-gap: 0.5em;
+    grid-column-gap: 2em;
+    font-size: 1.5rem;
+  }
+
+  .timeline h2 {
+    font-size: 2.6em;
+  }
+
+  .timeline h3 {
+    font-size: 1.8em;
+  }
+
+  .timeline span {
+    font-size: 1.8em;
+  }
+
+  .timeline p {
+    font-size: 1.4em;
+  }
+
+  .socials-img {
+    width: 10%;
+  }
+}
+
+/* @media screen and (min-width: 1350px) {
+  #repositories {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+} */
+
+@media screen and (min-width: 1600px) {
+  #top-picture {
+    width: 20%
+  }
+
+  .words span {
+    font-size: 3rem;
+  }
+
+  .personal-picture {
+    width: 25%;
+  }
+
+  header {
+    background-image: url(https://picsum.photos/id/827/1800/600);
+  }
+
+  .skills-bottom {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  header {
+    background-image: url(https://picsum.photos/id/827/2000/600);
+  }
+
+  form, form input {
+    font-size: 2rem;
+  }
+
+  #projects-bottom {
+    font-size: 1.5em;
+  }
+
+  .socials-img {
+    width: 8%;
+  }
+
+  nav a {
+    font-size: 1.8em;
+  }
+
+  #skills h3 {
+    font-size: 1.8em;
+  }
+}
